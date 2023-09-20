@@ -1,7 +1,8 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Palmer Du
 # FILENAME: DuPalmer_decision_tree
-# SPECIFICATION: this program will produce a decision tree based on a variety of factors using the ID3 algorithm.
+# SPECIFICATION: this program will produce a decision tree based on a variety of factors using the ID3 algorithm. Input is 
+#                taken from a file named "contact_lens.csv" which is included in the github repo.
 # FOR: CS 4210- Assignment #1
 # TIME SPENT: 2-3 hours of coding/debugging
 #-----------------------------------------------------------*/
