@@ -1,7 +1,11 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Palmer Du 
 # FILENAME: DuPalmer_decision_tree_2.py
-# SPECIFICATION: description of the program
+# SPECIFICATION: This program uses contact_lens_training_1.csv, contact_lens_training_2.csv, contact_lens_training_3.csv, 
+#                and contact_lens_test.csv. This program calculated the average performance of a decision tree created using each
+#                of the three training sets and a pre-pruning strategy of setting the max depth equal to three. Each training set 
+#                is then averaged over 10 trials, which is then outputted. The goal of this program is to determine which training
+#                set has the best performance, since each set has a different size.
 # FOR: CS 4210- Assignment #2
 # TIME SPENT: about 2 hours
 #-----------------------------------------------------------*/
