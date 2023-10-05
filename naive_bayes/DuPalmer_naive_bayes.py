@@ -77,5 +77,4 @@ for i in range(len(temp)):
 print("%-7s %-11s %-14s %-11s %-9s %-10s %-10s"% ("Day", "Outlook", "Temperature", "Humidity", "Wind", "PlayTennis", "Confidence"))
 for i in dbTest:
     if i[6] > 0.75:
-        print("%-7s %-11s %-14s %-11s %-9s %-10s %-10s"% (i[0], i[1], i[2], i[3], i[4], i[5], i[6]))
-
+        print("%-7s %-11s %-14s %-11s %-9s %-10s %-10.4s"% (i[0], i[1], i[2], i[3], i[4], i[5], i[6]))
