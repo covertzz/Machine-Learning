@@ -6,10 +6,10 @@
 #                of the three training sets and a pre-pruning strategy of setting the max depth equal to three. Each training set 
 #                is then averaged over 10 trials, which is then outputted. The goal of this program is to determine which training
 #                set has the best performance, since each set has a different size.
+
 # FOR: CS 4210- Assignment #2
 # TIME SPENT: about 2 hours
 #-----------------------------------------------------------*/
-\
 from sklearn import tree
 import matplotlib.pyplot as plt
 
@@ -29,6 +29,36 @@ for ds in dataSets:
          for i, row in enumerate(reader):
              if i > 0: #skipping the header
                 dbTraining.append (row)
+
+    for i in range(len(dbTraining)):
+            X.append([0,0,0,0])
+            
+            if dbTraining[i][0] == "Young":
+                X[i][0] = 1
+            elif dbTraining[i][0] == "Prepresbyopic":
+                X[i][0] = 2
+            elif dbTraining[i][0] == "Presbyopic":
+                X[i][0] = 3
+
+            if dbTraining[i][1] == "Myope":
+                X[i][1] = 1
+            elif dbTraining[i][1] == "Hypermetrope":
+                X[i][1] = 2
+
+            if dbTraining[i][2] == "Yes":
+                X[i][2] = 1
+            elif dbTraining[i][2] == "No":
+                X[i][2] = 2 
+
+            if dbTraining[i][3] == "Reduced":
+                X[i][3] = 1
+            elif dbTraining[i][3] == "Normal":
+                X[i][3] = 2
+
+            if dbTraining[i][4] == "Yes":
+                Y.append(1)
+            elif dbTraining[i][4] == "No":
+                Y.append(2)
 
     sum = 0.0
     #loop your training and test tasks 10 times here
@@ -86,8 +116,3 @@ for ds in dataSets:
         
     sum = sum/10
     print("The aveage accuracy for " + ds + " is: " + str(sum))
-    
-
-
-
-
