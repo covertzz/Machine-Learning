@@ -1,7 +1,8 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Palmer Du
 # FILENAME: DuPalmer_svm
-# SPECIFICATION: description of the program
+# SPECIFICATION: This program trains a Support Vector Machine (svm) using the file optdigits.tra to recognize handwritten digits. The model is then trained
+#                with optdigits.tes.
 # FOR: CS 4210- Assignment #3
 # TIME SPENT: 1.5 hours
 #-----------------------------------------------------------*/
