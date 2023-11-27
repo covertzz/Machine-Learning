@@ -53,7 +53,7 @@ for x in n:
 
             if (accuracy > p_max_accuracy):
                if z == Perceptron:
-                  p_max_accuracymax_accuracy = accuracy
+                  p_max_accuracy = accuracy
                   print("Highest Perceptron accuracy so far: " + str(p_max_accuracy) + ", Parameters: learning rate = " + str(x) + ", shuffle = " + str(y))
                else:
                   p_max_accuracy = accuracy
@@ -61,7 +61,7 @@ for x in n:
 
             if (accuracy > mlp_max_accuracy):
                if z == Perceptron:
-                  mlp_max_accuracymax_accuracy = accuracy
+                  mlp_max_accuracy = accuracy
                   print("Highest MLP accuracy so far: " + str(p_max_accuracy) + ", Parameters: learning rate = " + str(x) + ", shuffle = " + str(y))
                else:
                   mlp_max_accuracy = accuracy
